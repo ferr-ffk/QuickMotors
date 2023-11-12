@@ -1,0 +1,13 @@
+.forum {
+  border-left: 1px solid var(--cor-borda);
+  border-right: 1px solid var(--cor-borda);
+  border-bottom: 1px solid var(--cor-borda);
+
+  margin-bottom: 25rem;
+
+  min-height: 75rem;
+  max-height: 100%;
+  width: 60%;
+  position: absolute;
+  left: 7.5rem;
+}

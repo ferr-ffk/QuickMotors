@@ -1,0 +1,107 @@
+.container:has(.form) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+
+  height: 70dvh;
+  margin-block: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 1.25rem;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo_pagina {
+  padding: 1rem;
+  font-size: 3.75rem;
+
+  border-bottom: 2px solid black;
+}
+
+.titulo_pagina::after {
+  content: "Usuário";
+  color: var(--cor-primaria);
+
+  position: absolute;
+  top: 60%;
+  left: 80%;
+
+  font-size: 2rem;
+}
+
+.titulo_pagina_mecanico {
+  padding: 1rem;
+  font-size: 3.75rem;
+
+  border-bottom: 2px solid black;
+}
+
+.titulo_pagina_mecanico::after {
+  content: "Mecânico";
+  color: var(--cor-secundaria);
+
+  position: absolute;
+  top: 60%;
+  left: 80%;
+
+  font-size: 2rem;
+}
+
+.mensagem_erro {
+  color: var(--cor-erro);
+  margin-block: 1.125rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.botao_submit, .botao_submit_mecanico {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  transition: ease-in 150ms;
+}
+
+.botao_submit {
+  background-color: var(--cor-primaria);
+  padding: 1.325rem 4.375rem;
+
+  margin-inline: auto;
+
+  border: none;
+  border-radius: 4.125rem;
+}
+
+.botao_submit_mecanico {
+  background-color: var(--cor-secundaria);
+  padding: 1.325rem 4.375rem;
+
+  margin-inline: auto;
+
+  border: none;
+  border-radius: 4.125rem;
+}
+
+.botao_submit:hover,.botao_submit:focus,.botao_submit_mecanico:hover,.botao_submit_mecanico:focus {
+  background-color: transparent;
+
+  color: var(--cor-cinza);
+}
+
+.paragrafo_outro {
+  font-size: 1.325rem;
+}
+
+.paragrafo_outro a {
+  text-decoration: underline;
+}
